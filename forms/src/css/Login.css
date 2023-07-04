@@ -1,0 +1,80 @@
+ body {
+     background-color: lightgray;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow: hidden;
+ }
+
+ .logo {
+     width: 100%;
+     height: 58%;
+     object-fit: contain;
+ }
+ .Container {
+     display: flex;
+     gap: 10px;
+     padding: 10px;
+ }
+
+ .sideBarContainer {
+     max-width: 30%;
+     position: relative;
+ }
+
+ .Sams {
+     background-image: conic-gradient(#060A5A 78deg, #fff 320deg, #060A5A 45deg);
+     border-radius: 15px;
+     width: 95%;
+     margin-right: 5px;
+     flex-wrap: wrap;
+     justify-content: center;
+     line-height: -30px;
+     padding: 10px;
+     margin-bottom: 0px;
+     position: absolute;
+  
+
+ }
+ 
+ .Sams p {
+     font-weight: bold;
+     text-align: center;
+     font-size: 1.8rem;
+ }
+
+ .title p {
+     font-size: 1.3rem;
+     font-weight: bold;
+
+ }
+ 
+ @media only screen and (max-width:414px) {
+
+     .logo {
+         height: 64%;
+     }
+    
+     .Sams p{
+        font-size: 1.5rem
+       
+     }
+    .sideBarContainer {
+        max-width: 35%;
+    }
+
+ }
+@media only screen and (max-width:280px) {
+
+    .logo {
+        height: 55%;
+    }
+    .Sams{
+        height: 22vh;
+    }
+    .Sams p {
+        font-size: 1.2rem
+    }
+   
+
+}
